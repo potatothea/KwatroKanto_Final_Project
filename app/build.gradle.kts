@@ -8,6 +8,10 @@ android {
     namespace = "com.example.kwatrokanto_final_project"
     compileSdk = 36
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId = "com.example.kwatrokanto_final_project"
         minSdk = 29
