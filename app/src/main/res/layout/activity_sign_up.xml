@@ -37,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title">
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:ignore="TextSizeCheck">
 
         <!-- Header -->
         <TextView
@@ -46,14 +47,14 @@
             android:layout_gravity="center"
             android:elevation="6dp"
             android:fontFamily="@font/poppins_bold"
+            android:shadowColor="#55000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="3"
             android:text="@string/sign_up"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
-            android:textStyle="bold"
-        android:shadowColor="#55000000"
-        android:shadowDx="0"
-        android:shadowDy="2"
-        android:shadowRadius="3"/>
+            android:textStyle="bold" />
 
 
         <!-- Username -->
@@ -72,6 +73,7 @@
             android:background="@drawable/edittext_bg"
             android:paddingStart="16dp"
             android:textColor="@color/black"
+            tools:ignore="LabelFor,RtlSymmetry,TextFields" />
 
         <!-- Password -->
         <TextView
@@ -90,6 +92,7 @@
             android:inputType="textPassword"
             android:paddingStart="16dp"
             android:textColor="@color/black"
+            tools:ignore="LabelFor" />
 
         <!-- Confirm Password -->
         <TextView
@@ -108,6 +111,7 @@
             android:inputType="textPassword"
             android:paddingStart="16dp"
             android:textColor="@color/black"
+            tools:ignore="LabelFor,RtlSymmetry" />
 
         <!-- Email -->
         <TextView
@@ -126,6 +130,7 @@
             android:inputType="textEmailAddress"
             android:paddingStart="16dp"
             android:textColor="@color/black"
+            tools:ignore="LabelFor,RtlSymmetry" />
     </LinearLayout>
 
     <LinearLayout
@@ -151,7 +156,7 @@
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="16sp"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
 
         <!-- Login Btn-->
 
@@ -165,7 +170,7 @@
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="16sp"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
 
     </LinearLayout>
 
