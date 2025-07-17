@@ -37,7 +37,7 @@ class starter_launch : AppCompatActivity() {
 
         val rootLayout = findViewById<ConstraintLayout>(R.id.main)
         rootLayout.setOnClickListener {
-            val intent = Intent(this, NextActivity::class.java) // Replace with your actual activity
+            val intent = Intent(this, Login::class.java) // Replace with your actual activity
             startActivity(intent)
             finish()
         }
